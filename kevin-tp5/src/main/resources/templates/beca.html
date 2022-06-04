@@ -18,20 +18,20 @@
 		     <table class="table">
 		          <thead>
 		                <tr class="table-primary">
-		                   <th>  legajo</th>
-		                    <th> Nombre</th>
-		                    <th> Apellido</th>
-		                    <th> Email</th>
-		                    <th> Telefono</th>
+		                   <th>  Codigo</th>
+		                    <th> Curso</th>
+		                    <th>Fecha Inicio</th>
+		                    <th> Fecha fin</th>
+		                    <th> Estado</th>
 		                </tr>
 		          </thead>
 		          <tbody>
-		               <tr class="table-secondary" th:each="doc:${docente}">
-		                   <td th:text="${doc.legajo}"> </td>
-		                    <td th:text="${doc.nombre}">  23/03/22</td>
-		                   	<td th:text="${doc.apellido}"> </td>
-		                   	<td th:text="${doc.email}"> </td>
-		                   	<td th:text="${doc.telefono}">  </td>                  
+		               <tr class="table-secondary" th:each="bec:${beca}">
+		                   <td th:text="${bec.codigo}"> </td>
+		                    <td th:text="${bec.curso}">  23/03/22</td>
+		                   	<td th:text="${bec.fecha_inicio}"> </td>
+		                   	<td th:text="${bec.fecha_fin}"> </td>
+		                   	<td th:text="${bec.estado}">  </td>                  
 		               </tr >   
 		          </tbody> 
 		     </table>
