@@ -1,10 +1,22 @@
 package ar.edu.unju.fi.pvisual.model;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class Docente {
+	@Min(value=1, message="El valor minimo es 1") @Max(value=999, message="El valor maximo es 999")
 	private int legajo;
+	@NotEmpty(message="Debe ingresar un nombre")
 	private String nombre;
+	@NotEmpty(message="Debe ingresar el apellido")
 	private String apellido;
+	@NotEmpty(message="Debe ingresar el Email")
 	private String email;
+    @Max(value=1111111111, message="El numero debe ser de 10 dijitos")
 	private int telefono;
 	
 	public Docente() {

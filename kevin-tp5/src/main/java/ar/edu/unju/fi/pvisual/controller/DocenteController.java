@@ -1,16 +1,23 @@
 package ar.edu.unju.fi.pvisual.controller;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.List;
 
+
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import ar.edu.unju.fi.pvisual.model.Docente;
 
+
 @Controller
+
 public class DocenteController {
+	
+	
 	
 	public List<Docente> getDocente(){
 		List<Docente> listadocente=new ArrayList<>();
@@ -22,11 +29,17 @@ public class DocenteController {
 	}
 	
 	
-	@RequestMapping("/Docente")
+	/*@RequestMapping("/Docente")
 	public String getDocente(Model model) {
 		
 		model.addAttribute("docente",getDocente());
 		return "docente";
-	}  
+	}*/
+	
+	@RequestMapping("/Docente")
+	public ModelAndView listaDocente() {
+		ModelAndView mav = new ModelAndView("redirect:/docente/listaDocente");
+		return mav;
+	}
 
 }

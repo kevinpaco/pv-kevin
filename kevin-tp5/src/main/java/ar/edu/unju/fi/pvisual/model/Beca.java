@@ -1,7 +1,8 @@
 package ar.edu.unju.fi.pvisual.model;
 
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class Beca {
 	private int codigo;
 	private String curso;

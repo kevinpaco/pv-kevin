@@ -17,6 +17,9 @@ public class AlumnoController {
 		List<Alumno> listalumno=new ArrayList<>();
 		
 		listalumno.add(new Alumno(4320432,"luis","agirre","luis@34gmai.com",388493928));
+		listalumno.add(new Alumno(3455233,"Albert","Yampa","abert23@gmail.com",232323233));
+		listalumno.add(new Alumno(4320432,"Lisa","Simpsons","lisa23@gmmail.com",34324543));
+		listalumno.add(new Alumno(4320432,"Bart","Simpsons","elbarto@gmail.com",34325322));
 		
 		return listalumno;
 	}

@@ -1,5 +1,8 @@
 package ar.edu.unju.fi.pvisual.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Curso {
 	private int codigo;
 	private String titulo;

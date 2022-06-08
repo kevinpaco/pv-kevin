@@ -1,5 +1,8 @@
 package ar.edu.unju.fi.pvisual.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Alumno {
 	private int dni;
 	private String nombre;
